@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Feedback App
+
+This application allows users to upload audio files, transcribe them, and receive AI-generated feedback and scoring.
+
+## Features
+
+- Upload audio files (.mp3, .wav)
+- Transcription using Deepgram API model Nova - 3
+- AI feedback and scoring using Google Gemini API model gemini-1,5-flash
+- Responsive, modern UI
+- See feedback and scores
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js (v18 or higher recommended)
+- npm
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <your-repo-url>
+   cd my-feedback-app
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Set up environment variables:
+   - Create a `.env.local` file in the root of `my-feedback-app`.
+   - Add your API keys:
+     ```env
+     DEEPGRAM_API_KEY=your_deepgram_api_key
+     GEMINI_API_KEY=your_gemini_api_key
+     ```
+
+### Running the App
+
+To start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To build for production:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+npm start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Project Structure
 
-## Learn More
+- `src/app/` - Main app and API routes
+- `src/components/` - UI components
+- `src/styles/` - CSS modules for styling
 
-To learn more about Next.js, take a look at the following resources:
+### Customization
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Update styles in `src/styles/` as needed
+- Adjust API logic in `src/app/api/analyze-call/route.ts`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT

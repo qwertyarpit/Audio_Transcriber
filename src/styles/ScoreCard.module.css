@@ -1,0 +1,45 @@
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  max-width: 420px;
+  width: 100%;
+}
+/* .title {
+  margin-bottom: 3rem;
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #222;
+} */
+.title {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table td,
+.table th {
+  border-bottom: 1px solid #eee;
+  padding: 0.6rem 0.5rem;
+  font-size: 1rem;
+}
+.table tr:last-child td {
+  border-bottom: none;
+}
+.label {
+  color: #444;
+  font-weight: 500;
+}
+.score {
+  text-align: right;
+  font-family: monospace;
+  color: #2a7a2a;
+  font-weight: 600;
+}

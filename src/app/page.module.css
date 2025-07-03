@@ -6,6 +6,7 @@
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2;
 
+  background: #72e506;
   display: grid;
   grid-template-rows: 20px 1fr 20px;
   align-items: center;
@@ -28,10 +29,49 @@
 }
 
 .main {
+  max-width: 1280px;
+  width: 100%;
+  margin: 2rem auto;
+  padding: 1.5rem 1rem;
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2;
+  align-items: center;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #133366;
+}
+
+.processBtn {
+  margin: 1rem 0;
+  width: auto;
+  min-width: 120px;
+  padding: 0.5rem 1.2rem;
+  font-size: 1rem;
+  background: #2a7a2a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.processBtn:disabled {
+  background: #b5b5b5;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #c00;
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
 }
 
 .main ol {
@@ -68,10 +108,7 @@
   padding: 0 20px;
   border: none;
   border: 1px solid transparent;
-  transition:
-    background 0.2s,
-    color 0.2s,
-    border-color 0.2s;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -164,5 +201,30 @@ a.secondary {
 @media (prefers-color-scheme: dark) {
   .logo {
     filter: invert();
+  }
+}
+
+.cardsRow {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 2rem;
+}
+.cardsRow > * {
+  flex: 1 1 0;
+  max-width: 600px;
+}
+@media (max-width: 900px) {
+  .cardsRow {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .cardsRow > * {
+    max-width: 100%;
+    width: 100%;
   }
 }
