@@ -1,4 +1,4 @@
-# AI Feedback App
+   # Audio Transcriber
 
 This application allows users to upload audio files, transcribe them, and receive AI-generated feedback and scoring.
 
@@ -12,17 +12,18 @@ This application allows users to upload audio files, transcribe them, and receiv
 
 ## Getting Started
 
-### Prerequisites
+### Tech Stack
 
-- Node.js (v18 or higher recommended)
-- npm
+- [Next.js 15](https://nextjs.org/) (App Router)
+- [Google GenAI](https://ai.google.dev/)
+- [DeepGram Voice AI](https://deepgram.com/)
 
 ### Installation
 
 1. Clone the repository:
    ```bash
-   git clone <your-repo-url>
-   cd my-feedback-app
+   git clone https://github.com/qwertyarpit/Audio_Transcriber.git
+   
    ```
 2. Install dependencies:
    ```bash
