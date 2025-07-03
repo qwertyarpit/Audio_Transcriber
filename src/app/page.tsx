@@ -51,7 +51,11 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <h1 className={styles.heading}>AI Feedback Form</h1>
+      <h1 className={styles.heading}>Audio Transcriber</h1>
+      <div className={styles.subtitle}>
+        Get Feedback, Observations, and Detailed Scores Based on Your Audio
+        Files
+      </div>
       <AudioUploader onFileChange={setFile} />
       <button
         className={styles.processBtn}

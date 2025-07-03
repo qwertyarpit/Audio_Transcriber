@@ -46,6 +46,15 @@
   color: #133366;
 }
 
+.subtitle {
+  text-align: center;
+  color: #205090;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  margin-top: -1rem;
+  font-weight: 500;
+}
+
 .processBtn {
   margin: 1rem 0;
   width: auto;
