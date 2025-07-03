@@ -12,10 +12,11 @@ This application allows users to upload audio files, transcribe them, and receiv
 
 ## Getting Started
 
-### Prerequisites
+### Tech Stack
 
-- Node.js (v18 or higher recommended)
-- npm
+- [Next.js 15](https://nextjs.org/) (App Router)
+- [Google GenAI](https://ai.google.dev/)
+- [DeepGram Voice AI](https://deepgram.com/)
 
 ### Installation
 
